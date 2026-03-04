@@ -12,16 +12,32 @@
     <meta name="author" content="Renan de Castro Teixeira">
     <meta name="robots" content="index,follow">
 
+    <!-- Link que define o ícone no head do projeto -->
     <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+
+    <!-- link que conecta o css com essa página html, proporcionando a estilização da mesma -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>As 10 cidades mais tecnológicas do estado de São Paulo</title>
+
+   <!-- CSS interno (relativo)-->
+    <style>
+      body{
+    background-color: #e9e9e9;
+    padding: 60px 180px;
+   }
+    </style>
     
 </head>
 
-<body>
+<body id="topo">
 
-    <h1>As 10 cidades mais tecnológicas do estado de São Paulo</h1>
+   <a href="#topo" id="btn-topo">↑</a>
+
+   <!-- CSS in line (em linha) -->
+    <h1 style="font-family: 'Exo 2', sans-serif; text-align: center; margin-bottom: 60px;">As 10 cidades mais tecnológicas do estado de São Paulo</h1>
+
+    <h2 id="primeiroSubTitulo">São Paulo é o estado mais populoso e rico do Brasil com mais de 46 milhões de habitantes (aprox. 21,6% da população nacional) <br> e um PIB que representa cerca de 31% do total nacional. Confira abaixo algumas das cidades mais tecnológicas do estado. </h2>
 
     <img src="img/bandeira-sp.png" alt="Bandeira do estado de São Paulo" title="Bandeira do estado de São Paulo">
 
@@ -31,24 +47,74 @@
 
     <p>Explorar as 10 cidades mais tecnológicas de São Paulo é mergulhar em um cenário de contrastes produtivos, onde a robótica avançada de São José dos Campos convive com a biotecnologia de ponta em Campinas e a excelência em edtechs de Santana de Parnaíba. Esses centros urbanos não são apenas locais de produção, mas laboratórios vivos que testam o futuro da sociedade brasileira. Ao analisar cada um desses polos, percebe-se que a tecnologia no estado deixou de ser um setor isolado para se tornar o alicerce de uma gestão pública eficiente, focada em melhorar diretamente a qualidade de vida do cidadão e a sustentabilidade ambiental.</p>
 
+    <table>
+
+      <tr>
+         <th>Clique e confira as dez cidades mais tecnológicas do Estado de São Paulo: </th>
+      </tr>
+
+      <tr>
+         <td><a href="#1°">São Paulo</a></td>
+      </tr>
+
+      <tr>
+         <td><a href="#2°">Campinas</a></td>
+      </tr>
+
+      <tr>
+         <td><a href="#3°">Ribeirão Preto</a></td>
+      </tr>
+
+      <tr>
+         <td><a href="#4°">São José dos Campos</a></td>
+      </tr>
+
+      <tr>
+         <td><a href="#5°">São Carlos</a></td>
+      </tr>
+
+      <tr>
+         <td><a href="#6°">Sorocaba</a></td>
+      </tr>
+
+      <tr>
+         <td><a href="#7°">Santos</a></td>
+      </tr>
+
+      <tr>
+         <td><a href="#8°">São José do Rio Preto</a></td>
+      </tr>
+
+      <tr>
+         <td><a href="#9°">Piracicaba</a></td>
+      </tr>
+
+      <tr>
+         <td><a href="#10°">Bauru</a></td>
+      </tr>
+
+    </table>
+
     <hr>
 
     <!-- (h2+p*3+img)*10 -->
     <!-- O target="_blank" dentro do da tag a, faz ele abrir uma nova aba ao clicar no link -->
 
-     <h2>
+     <h2 id="1°">
         <a href="saopaulo.html">São Paulo – Líder do ranking estadual</a>
      </h2>
 
-     <img src="img/cidade-de-sp.jpg" alt="Imagem da cidade de São Paulo mostrando a avenida paulista centralizada com uma visão de cima, mostrando também diversos prédios que ficam ao redor dela." title="Imagem da cidade de São Paulo mostrando a avenida paulista centralizada com uma visão de cima, mostrando também diversos prédios que ficam ao redor dela.">
+     <a href="saopaulo.html"><img src="img/cidade-de-sp.jpg" alt="Imagem da cidade de São Paulo mostrando a avenida paulista centralizada com uma visão de cima, mostrando também diversos prédios que ficam ao redor dela." title="Imagem da cidade de São Paulo mostrando a avenida paulista centralizada com uma visão de cima, além de prédios que ficam ao redor dela."></a>
 
      <p>São Paulo é, de longe, a cidade com maior ecossistema de startups do estado de São Paulo, com 1.670 empresas inovadoras registradas no estudo do Sebrae — mais que o total das outras nove cidades do ranking juntas. Esse volume expressivo reflete sua posição como maior centro econômico e tecnológico do Brasil, com grande concentração de laboratórios, universidades e centros de pesquisa.</p>
      <p>A metrópole paulista tem atraído investimentos tanto públicos quanto privados, e sua infraestrutura consolidada — desde incubadoras até grandes aceleradoras — impulsiona a criação e expansão de soluções tecnológicas em diversas áreas como saúde digital, fintechs e inteligência artificial. Além disso, sua força demográfica e mercado consumidor robusto fazem de São Paulo um ambiente fértil para negócios inovadores se desenvolverem rapidamente.</p>
      <p>Como principal hub tecnológico do Brasil, São Paulo também se destaca em rankings globais de inovação: por exemplo, a cidade figura entre os maiores ecossistemas de startups do mundo, sendo a única da América Latina no Global Startup Ecosystem Report. Isso reforça sua importância não apenas no contexto estadual, mas também internacional.</p>
 
+     
+
      <hr>
 
-     <h2>
+     <h2 id="2°">
         <a href="">Campinas – Segundo maior centro de startups do estado</a>
      </h2>
      
@@ -60,7 +126,7 @@
     
      <hr>
 
-     <h2>
+     <h2 id="3°">
         <a href="">Ribeirão Preto – Polo emergente de tecnologia e inovação</a>
      </h2>
 
@@ -72,10 +138,9 @@
     
     <hr>
 
-     <h2>
+     <h2 id="4°">
         <a href="">São José dos Campos – Foco em tecnologia avançada</a>
      </h2>
-
 
      <img src="img/sao-jose-dos-campos.png" alt="" title="">
 
@@ -85,7 +150,7 @@
 
      <hr>
 
-     <h2>
+     <h2 id="5°">
         <a href="">São Carlos – Referência em ciência e tecnologia</a>
      </h2>
 
@@ -97,7 +162,7 @@
 
      <hr>
 
-     <h2>
+     <h2 id="6°">
         <a href="">Sorocaba – Expansão do ecossistema tecnológico</a>
      </h2>
 
@@ -109,7 +174,7 @@
 
      <hr>
 
-     <h2>
+     <h2 id="7°">
         <a href="">Santos – Tecnologia e inovação na Baixada Santista</a>
      </h2>
 
@@ -121,7 +186,7 @@
 
      <hr>
 
-     <h2>
+     <h2 id="8°">
         <a href="">São José do Rio Preto – Crescimento tecnológico no interior</a>
      </h2>
 
@@ -133,7 +198,7 @@
 
      <hr>
 
-     <h2>
+     <h2 id="9°">
         <a href="">Piracicaba – Inovação e agronegócio tecnológico</a>
      </h2>
 
@@ -145,7 +210,7 @@
 
      <hr>
 
-     <h2>
+     <h2 id="10°">
         <a href="">Bauru – Diversificação do ecossistema de startups</a>
      </h2>
 
