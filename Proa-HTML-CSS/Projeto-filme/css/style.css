@@ -1,0 +1,72 @@
+body{
+    /* Ajuda a controlar melhor o tamanho dos elementos no layout. Ele muda como o navegador calcula largura e altura dos elementos. */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #d2d2d2;
+    font-family: 'Inter', 'Roboto', 'Open Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    /* O justify-content: space-between; deixaria tudo igualmente espaçado */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+#nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1px;
+}
+
+#nav-links a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    /* Faz a transição do "#nav-links a:hover" acontecer com mais fluidez */
+    transition: 0.3s;
+}
+
+#nav-links li{
+    /* Permite que os itens fiquem alinhados na horizontal, já que o padrão das listas é pular pra linha de baixo. */
+    padding: 0 1px;
+}
+
+/* Efeito: Ao colocar o mouse em cima, ele inverte as cores do background e da fonte */
+#nav-links a:hover{
+    background-color: white;
+    color: black;
+}
+
+#botao-prime{
+    background-color:#1A98FF;
+    padding:10px 16px;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    margin-left:auto;
+}
+
+#botao-prime:hover{
+    background-color: #3ba5fc;
+}
+
+#logotipo{
+    width: 80px;
+    height: auto;
+}
+
+#lupa{
+    display: flex;
+    width: 30px;
+    height: auto;
+    margin-left: auto;
+}
+
+
+
