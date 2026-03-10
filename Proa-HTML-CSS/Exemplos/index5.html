@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Listas e Tabelas</title>
+
+    <style>
+
+        /* Estilização dos itens da tabela */
+        th, td{
+            border: 1px solid;
+            padding: 10px;   
+        }
+
+        /* Estilização da tabela em si. É nela que conseguimos usar o border-collapse para retirar o espaçamento entre as bordas dos itens da tabela*/
+        table{
+             border-collapse: collapse;
+        }
+
+        /* Isso define que a estilização sera distribuida no itens de maneira par (even) nas linhas da tabela (table rows) */
+        tr:nth-child(even){
+            color: blue;
+            background-color: orange;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Listas e Tabelas no HTML</h1>
+
+    <!-- não possui formas de ordenação ao lado dos itens - Unordered list -->
+    <h2>Lista não ordenada</h2>
+    <ul>
+        <li>absba</li>
+        <li>sandalasda</li>
+        <li>asdadnadpand</li>
+        <li>sosdka</li>
+    </ul>
+
+    <ul type="square">
+        <li>absba</li>
+        <li>sandalasda</li>
+        <li>asdadnadpand</li>
+        <li>sosdka</li>
+    </ul>
+
+    <ul type="circle">
+        <li>absba</li>
+        <li>sandalasda</li>
+        <li>asdadnadpand</li>
+        <li>sosdka</li>
+    </ul>
+
+    <ul type="none">
+        <li>absba</li>
+        <li>sandalasda</li>
+        <li>asdadnadpand</li>
+        <li>sosdka</li>
+    </ul>
+
+    <br><hr><br>
+
+    <!-- Lista ordenada. O "type" define qual caracter vai estar ao lado esquerdo do item na lista - Ordered list -->
+     <h2>Lista ordenada</h2>
+    <ol>
+        <li>coffe</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>bread</li>
+    </ol>
+
+    <ol type="A">
+        <li>coffe</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>bread</li>
+    </ol>
+
+    <ol type="a">
+        <li>coffe</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>bread</li>
+    </ol>
+
+    <ol type="I">
+        <li>coffe</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>bread</li>
+    </ol>
+
+    <ol type="i">
+        <li>coffe</li>
+        <li>tea</li>
+        <li>milk</li>
+        <li>bread</li>
+    </ol>
+
+    <br><hr><br>
+
+    <!-- Lista descritiva/definida - Description list -->
+     <h2>Lista descritiva/definida</h2>
+    <dl>
+        <dt>Coffe</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <br><hr><br>
+
+    <!-- Tabelas -->
+    <h2>Tabelas</h2>
+
+    <table>
+
+        <tr>
+            <th>aluno</th>
+            <th>idade</th>
+            <th>curso</th>
+            <th>semestre</th>
+        </tr>
+
+        <tr>
+            <td>renan</td>
+            <td>21</td>
+            <td>ads</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>renan</td>
+            <td>21</td>
+            <td>ads</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>renan</td>
+            <td>21</td>
+            <td>ads</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>renan</td>
+            <td>21</td>
+            <td>ads</td>
+            <td>2</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
