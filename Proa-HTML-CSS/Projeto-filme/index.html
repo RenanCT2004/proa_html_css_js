@@ -12,7 +12,7 @@
     <meta name="author" content="Renan de Castro Teixeira">
     <meta name="robots" content="index,follow">
 
-    <link rel="shortcut icon" href="img/proa-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/youtube-blue.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -21,44 +21,147 @@
 </head>
 
 <body>
-    
-    <header>
-
-        <img id="logotipo" src="img/proa-logo.jpg" alt="Logo do Site" title="Logo do site">
-        
-        <!-- Nav bar (barra de navegação) -->
-        <nav>
-            <ul id="nav-links">
-                <li><a href="">Início</a></li>
-                <li><a href="">Séries</a></li>
-                <li><a href="">Filmes</a></li>
-                <li><a href="">Esportes</a></li>
-                <li><a href="">TV Ao vivo</a></li>
-                <li><a href="">Assinaturas</a></li>
-            </ul>
-
-        </nav>
-        <a id="botao-prime" href="">Assine o Prime</a>
-    </header>
 
     <!-- Conteúdo principal (main) do site-->
     <main>
-        <section>
+        <header>
 
-            <h1>Kill Bill: Volume 1</h1>
-            <h2>Uma Thurman estrela este thriller repleto de ação sobre uma traição brutal e uma vingança épica. Quatro anos depois de levar um tiro na cabeça em seu próprio casamento, A Noiva sai do coma e decide que é hora de se vingar.</h2>
-            
+            <!-- Nav bar (barra de navegação) -->
+            <nav>
+                <img id="logotipo" src="img/youtube-blue.png" alt="Logo do Site" title="Logo do site">
+                <ul id="nav-links">
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Filmes</a></li>
+                    <li><a href="">Séries</a></li>
+                    <li><a href="">Esportes</a></li>
+                    <li><a href="">TV Ao vivo</a></li>
+                    <li><a href="">Assinaturas</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    
+                    <button id="lupa">
+                        <img src="img/lupa.png" alt="Buscar">
+                    </button>
+
+                    <button id="perfil">
+                        <img src="img/perfil-icone.png" alt="Perfil">
+                    </button>
+
+                    <a id="botao-prime" href="">Assine o Prime</a>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <section id="conteudo-principal">
+            <section id="info-filme">
+
+                <h1>Kill Bill: Volume 1</h1>
+                <p style="color: #37F1A3;"><b>Indicado ao GOLDEN GLOBE <sup>®</sup></b></p>
+
+                <h2>Uma Thurman estrela este thriller repleto de ação sobre uma traição brutal e uma vingança épica.<br>
+                    Quatro anos depois de levar um tiro na cabeça em seu próprio casamento, A Noiva sai do coma e decide
+                    que é hora de se vingar.</h2>
+
+                <ul class="caracteristicas-filme">
+                    <li>IMDB 8,2</li>
+                    <li>1 h 44 min</li>
+                    <li>2003</li>
+                </ul>
+
+                <ul class="genero-filme">
+                    <li style="list-style-type: none;">Ação</li>
+                    <li>Suspense</li>
+                    <li>Sombrio</li>
+                    <li>Intenso</li>
+                </ul>
+
+                <p id="assista-ao-trailer"><a href="https://www.youtube.com/watch?v=7kSuas6mRpk&t" target="_blank">Assista ao trailer</a></p>
+
+            </section>
+
+            <section id="info-prime-video">
+
+                <p>Comece seu período de teste gratuito do canal SENAC+</p>
+                <p>Alugar em HD por R$11,90</p>
+                <p>Comprar em HD por R$32,90</p>
+                <p>Mais opções de compra/aluguel</p>
+
+            </section>
+
+            <section>
+                <p id="desc-aluguel">Você tem um período de 30 dias para começar a assistir a um vídeo alugado e, após o
+                    início, precisa terminar de assistir em 48 horas. <br>Sujeito aos termos.</p>
+            </section>
+
+            <section id="section-detalhes-relacionados">
+                <ul style="display: flex; flex-direction: row; gap: 32px; font-size: 26px; cursor: pointer; " >
+                    <!-- <li style="list-style-type: none; ">Relacionados</li> -->
+                    <li style="list-style-type: none;"><a href="#detalhes-filme">Detalhes</a></li>
+                </ul>
+            </section>
         </section>
 
-        <section>
+        <section id="detalhes-filme" >
 
-        </section>
+            <h3>Saiba mais</h3>
+
+            <dl>
+                <dt>Classificação do conteúdo</dt>
+                <dd>Temas sensíveis, violência extrema, luzes intermitentes e padrões estroboscópicos podem afetar espectadores fotossensíveis</dd>
+
+                <dt>Idiomas de áudio</dt>
+                <dd>Português (Brasil), English</dd>
+
+                <dt>Legendas</dt>
+                <dd>Português (Brasil) [CC]</dd>
+
+                <dt>Diretores</dt>
+                <dd><a href="#">Quentin Tarantino</a></dd>
+
+                <dt>Produtores</dt>
+                <dd><a href="#">Lawrence Bender</a></dd>
+
+                <dt>Elenco</dt>
+                <dd>
+                    <a href="#">Uma Thurman</a>,
+                    <a href="#">Elcio Romar</a>,
+                    <a href="#">Paulo Roberto Macedo</a>,
+                    <a href="#">Lucy Liu</a>,  
+                    <a href="#">Daryl Hannah</a>, 
+                    <a href="#">David Carradine</a>, 
+                    <a href="#">Michael Madsen</a>,  
+                    <a href="#">Miriam Ficher</a>,  
+                    <a href="#">Iara Riça</a>,  
+                    <a href="#">Vera Miranda</a>
+                </dd>
+
+                <dt>Estúdio</dt>
+                <dd>Senac Cine</dd>
+            </dl>
+
+        </section> 
+
     </main>
 
     <!-- Rodapé (footer) do site -->
     <footer>
 
-    </footer>  
+        <img id="logotipo" src="img/youtube-blue.png" alt="Logo do Site" title="Logo do site"> 
+
+        <section id="links-rodape">
+            <a href="">Termos e aviso de privacidade</a>
+            <a href="">Enviar feedback</a>
+            <a href="">Ajuda</a>
+
+            <p id="copyright-rodape">
+                © 1946-2026, Senac.com, Inc. ou suas afiliadas
+            </p>
+        </section>
+
+    </footer>
 
 </body>
 

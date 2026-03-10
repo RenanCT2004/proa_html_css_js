@@ -1,18 +1,107 @@
-body{
-    /* Ajuda a controlar melhor o tamanho dos elementos no layout. Ele muda como o navegador calcula largura e altura dos elementos. */
+*{
     box-sizing: border-box;
-    margin: 0;
+    margin:0;
     padding: 0;
-    background-color: #d2d2d2;
-    font-family: 'Inter', 'Roboto', 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 1080px;
+    display: relative;
+    justify-content: center;
 }
 
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     display: flex;
-    /* O justify-content: space-between; deixaria tudo igualmente espaçado */
-    justify-content: flex-start;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+main{
+    width:100%;
+    /* margin: 250px 0px 0px 0px; */
+}
+
+footer{
+    background-color: black;
+    padding: 35px 0;
+    
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
+    gap: 12px;
+    text-align: center;
+}
+
+#links-rodape{
+    display: flex;
+    gap: 20px;
+}
+
+#links-rodape a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#links-rodape a:hover{
+    text-decoration: underline;
+}
+
+#copyright-rodape{
+    color: white;
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+#conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 32px 100px 32px;
+    /* min-height:1080px; */
+    min-height: 100vh;
+    width :100%;
+    font-family: 'Inter', 'Roboto', 'Open Sans', sans-serif;
+
+    background:
+    linear-gradient(to top, rgba(0,0,0,1), transparent),
+    linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.1)),
+    url("../img/kill-bill.png");
+    
+    background-size: cover;
+    background-position: center 30%; 
+    background-repeat: no-repeat;
+}
+
+nav{
+    /* display: flex;
+    align-items: center;
+    width:100%; */ 
+
+    width: 100%;
+    max-width: 96.7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 40px;
+    margin: 0 auto;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(1px);
+
+    border-radius: 12px;
+
 }
 
 #nav-links{
@@ -32,11 +121,10 @@ header{
 }
 
 #nav-links li{
-    /* Permite que os itens fiquem alinhados na horizontal, já que o padrão das listas é pular pra linha de baixo. */
     padding: 0 1px;
 }
 
-/* Efeito: Ao colocar o mouse em cima, ele inverte as cores do background e da fonte */
+/* Hover = Efeito que ao colocar o mouse em cima, inverte as cores do background e da fonte */
 #nav-links a:hover{
     background-color: white;
     color: black;
@@ -49,7 +137,7 @@ header{
     color:white;
     text-decoration:none;
     font-weight:500;
-    margin-left:auto;
+    /* margin-left:auto; */
 }
 
 #botao-prime:hover{
@@ -57,16 +145,183 @@ header{
 }
 
 #logotipo{
-    width: 80px;
+    width: 40px;
     height: auto;
+    margin-right: 10px;
+}
+
+h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 20px;
 }
 
 #lupa{
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: rgb(157, 157, 157);
+}
+
+#lupa:hover{
+    background-color: #3BA5FC;
+}
+
+#lupa img{
+    width:30px;
+    height:auto;
+}
+
+#perfil{
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: rgb(157, 157, 157);
+}
+
+#perfil:hover{
+    background-color: #3BA5FC;
+}
+
+#perfil img{
+    width:30px;
+    height:auto;
+}
+
+.nav-right{
     display: flex;
-    width: 30px;
-    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
     margin-left: auto;
+    /*background-color: red;*/
+}
+
+.genero-filme li{
+    padding: 0 1px;
+}
+
+.genero-filme{
+    padding: 0;
+    margin: 10px 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.caracteristicas-filme{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    opacity: 0.5;
+}
+
+#info-prime-video{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#info-prime-video p{
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 20px 10px 20px 0px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#info-prime-video p:hover{
+    background-color: white;
+    color: black;
+}
+
+#desc-aluguel{
+    font-size: 20px;
+    color: white;
+    opacity: 0.5;
+}
+
+#info-filme{
+    padding-right: 50%;
+    display:flex;    
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    gap: 10px;
+} 
+
+#assista-ao-trailer{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    padding: 20px;
+    margin: 20px 0px 0px 0px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#assista-ao-trailer a{
+    text-decoration: none;
+    color: white;
+}
+
+#assista-ao-trailer:hover{
+    background-color: white;
+}
+
+#assista-ao-trailer:hover a{
+    color: black;
+}
+
+#detalhes-filme{
+    padding: 0px 32px;
+    max-width:100%;
+    min-height: 600px;
+    background-color: black;
+    color: white;
 }
 
 
+#detalhes-filme dt{
+    font-weight:bold;
+    font-size:20px;
+    margin-top:20px;
+}
 
+#detalhes-filme dd{
+    margin-top:6px;
+    color:#aaa;
+}
+
+#detalhes-filme a{
+    color:white;
+}
+
+#section-detalhes-relacionados{
+    margin-top: 100px;
+}
+
+#section-detalhes-relacionados a:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    transition: .3s;
+}
+
+#section-detalhes-relacionados a{
+    text-decoration: none;
+    color: #a6a6a6;
+}
